@@ -1,0 +1,14 @@
+{
+  "name": "cloudflare-deploy-test",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cloudflare Workers Static Assets の自動デプロイ動作確認",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.168.0"
+  },
+  "packageManager": "pnpm@11.21.0"
+}

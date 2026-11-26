@@ -1,0 +1,15 @@
+{
+  // Cloudflare Workers - Static Assets (静的サイト配信)
+  // docs: https://developers.cloudflare.com/workers/static-assets/
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "cloudflare-deploy-test",
+  "compatibility_date": "2026-11-26",
+
+  // Worker スクリプト (main) は静的サイトのみなら不要。
+  // public/ の中身がそのまま配信される。
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

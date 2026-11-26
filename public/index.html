@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloudflare Deploy Test</title>
+<meta name="description" content="Cloudflare Workers Static Assets の自動デプロイ動作確認用ページ">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main class="card">
+  <p class="eyebrow">Cloudflare Workers / Static Assets</p>
+  <h1>デプロイ成功</h1>
+  <p class="lead">GitHub の <code>main</code> への push で、このページが自動デプロイされます。</p>
+
+  <dl class="meta">
+    <div><dt>リポジトリ</dt><dd>cloudflare-deploy-test</dd></div>
+    <div><dt>配信方式</dt><dd>Workers Static Assets</dd></div>
+    <div><dt>公開ディレクトリ</dt><dd><code>public/</code></dd></div>
+    <div><dt>プラン</dt><dd>Free</dd></div>
+  </dl>
+
+  <p class="check" id="stamp">読み込み確認中…</p>
+  <p class="foot"><a href="/no-such-page">404 ページの確認</a></p>
+</main>
+<script>
+  document.getElementById('stamp').textContent =
+    'ページ表示時刻: ' + new Date().toLocaleString('ja-JP');
+</script>
+</body>
+</html>

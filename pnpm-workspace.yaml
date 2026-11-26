@@ -1,0 +1,4 @@
+# wrangler のローカル実行に必要なネイティブバイナリのビルドを許可 (pnpm 11)
+allowBuilds:
+  esbuild: true
+  workerd: true
